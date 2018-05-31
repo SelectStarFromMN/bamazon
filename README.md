@@ -10,5 +10,8 @@ There is also a Manager module (*bamazonManager.js*) which provides for viewing 
 
 This application is useful as an introduction and working example of the CLI + RDBMS online-store concept.
 
-**Screenshot:**
-![Screenshot1](https://github.com/SelectStarFromMN/bamazon/blob/master/bamazonScreenshot1.jpg)
+**Screenshots:**
+![Customer Module Screenshot](https://github.com/SelectStarFromMN/bamazon/blob/master/bamazonScreenshot1.jpg "Customer Module")
+
+![Manager Module Screenshot](https://github.com/SelectStarFromMN/bamazon/blob/master/managerScreenshot.jpg "Manager Module")
+
