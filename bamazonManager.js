@@ -38,7 +38,7 @@ function showManagerMenu() {
                     showAllProducts();
                     break;
                 case "View Low Inventory":
-                    showLowInventory(10);
+                    showLowInventory(5);
                     break;
                 case "Add to Inventory":
                     updateInventory();
