@@ -76,17 +76,20 @@ function offerItems() {
 function placeOrder(item, quantity) {
     if (item.stock_quantity >= quantity) {
         connection.query(
-            "UPDATE products SET ? WHERE ?",
+            "UPDATE products SET ?, ? WHERE ?",
             [
                 {
                     stock_quantity: (item.stock_quantity - quantity)
+                },
+                {
+                    product_sales: (item.product_sales + (item.price * quantity))
                 },
                 {
                     item_id: item.item_id
                 }
             ],
             function (error) {
-                if (error) throw err;
+                if (error) throw error;
             }
         );
         // Confirm purchase to user

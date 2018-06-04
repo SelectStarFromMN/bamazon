@@ -153,7 +153,7 @@ function addStock(item, quantity) {
 }
 
 function addNewProduct () {
-        // Build an inquirer choice list of all the products
+        // Build an inquirer choice list of product fields
         inquirer
             .prompt([
                 {
@@ -181,7 +181,6 @@ function addNewProduct () {
                 }
             ])
             .then(function (answer) {
-                console.log(answer)
                 var product_name = answer.product_name;
                 var department_name = answer.department_name;
                 var price = parseFloat(answer.price);
@@ -212,7 +211,7 @@ function formatProductTable(results) {
     // Format table header
     console.log(`
 +---------+--------------+-----------------+------------+----------------+
-| item_id | product_name | department_name | price      | stock_quantity |
+| item_id | product_name | department_name |      price | stock_quantity |
 +---------+--------------+-----------------+------------+----------------+ `);
 
     // Format each row
