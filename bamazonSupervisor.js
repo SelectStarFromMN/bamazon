@@ -1,7 +1,7 @@
 // SELECT d.department_id, d.department_name, d.over_head_costs, SUM(p.product_sales) AS total_product_sales,  SUM(p.product_sales) - d.over_head_costs AS department_profit FROM products p
 // JOIN departments  d ON d.department_name = p.department_name
 // GROUP BY p.department_name
-// ORDER BY 2 DESC
+// ORDER BY 5 DESC
 
 // Requires
 var inquirer = require('inquirer');
@@ -13,7 +13,7 @@ var connection = mysql.createConnection({
     user: 'root',
     password: 'root',
     database: 'bamazon',
-    // port: 3306,
+    port: 3306,
     socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock'
 })
 
@@ -65,7 +65,6 @@ ORDER BY 5 DESC`;
         if (err) throw err;
 
         // Display formatted table results
-        console.log(results);
         formatDepartmentSales(results);
 
         // Close dbconnection

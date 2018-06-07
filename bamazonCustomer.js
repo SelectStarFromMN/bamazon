@@ -8,7 +8,7 @@ var connection = mysql.createConnection({
     user: 'root',
     password: 'root',
     database: 'bamazon',
-    // port: 3306,
+    port: 3306,
     socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock'
 })
 

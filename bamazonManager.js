@@ -8,7 +8,7 @@ var connection = mysql.createConnection({
     user: 'root',
     password: 'root',
     database: 'bamazon',
-    // port: 3306,
+    port: 3306,
     socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock'
 })
 
@@ -66,7 +66,7 @@ function showAllProducts() {
 
 
 function showLowInventory(cutoff) {
-    connection.query("SELECT * FROM products WHERE stock_quantity < ?", [cutoff], function (err, results) {
+    connection.query("SELECT * FROM products WHERE stock_quantity <= ?", [cutoff], function (err, results) {
         // throw and exit on error
         if (err) throw err;
 

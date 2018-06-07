@@ -58,4 +58,5 @@ INSERT INTO products (product_name, department_name, price, stock_quantity, prod
 INSERT INTO products (product_name, department_name, price, stock_quantity, product_sales) 
   VALUES ('SnowGlobe', 'Collectibles', 9.50, 11, 5320);
   
-SELECT * FROM products;
+-- SELECT * FROM products;
+-- SELECT * FROM departments;

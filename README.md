@@ -6,12 +6,17 @@
 
 At the core of the system is a [mysql](https://www.npmjs.com/search?q=mysql) **"bamazon"** database which maintains our site's product catalog (including pricing and inventory).  The DDL and some sample seed data can be found within the repo (file: *dbseed.sql*).  The mysql node package provides constructors for easily establishing connections to our mysql database and methods for handling our CRUD needs.  For example, we query our database using the *connection.query* method in order to obtain and present a list of products to the user.  We compare in-stock quantities from the database to the desired number of units the user has requested to make sure we can service the user's order before placing it.  Similarly, in-stock records are updated upon successful completion of an order. 
 
-There is also a Manager module (*bamazonManager.js*) which provides for viewing and manipulating product stock.
+There is also a Manager module (*bamazonManager.js*) which provides for viewing and manipulating product stock, and a Supervisor module (*bamazonSupervisor.js*) which supports departmental-level administration.
 
 This application is useful as an introduction and working example of the CLI + RDBMS online-store concept.
+
+**Demonstration**
+![Features Demonstration](https://drive.google.com/file/d/1AyOXBfcVNShkN1f1Vv-ZektLqosjQxWC/view "Video Demonstration")
+
 
 **Screenshots:**
 ![Customer Module Screenshot](https://github.com/SelectStarFromMN/bamazon/blob/master/bamazonScreenshot1.jpg "Customer Module")
 
 ![Manager Module Screenshot](https://github.com/SelectStarFromMN/bamazon/blob/master/managerScreenshot.jpg "Manager Module")
 
+![Supervisor Module Screenshot](https://github.com/SelectStarFromMN/bamazon/blob/master/supervisorScreenshot.jpg "Supervisor Module")
