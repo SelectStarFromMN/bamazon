@@ -10,11 +10,11 @@ There is also a Manager module (*bamazonManager.js*) which provides for viewing 
 
 This application is useful as an introduction and working example of the CLI + RDBMS online-store concept.
 
-**Video Demonstrations:**
+**Video Demonstrations:** (note both files are the same, one is hosted on google-drive the other is here in github)
 <br>
-[Hosted Video Features Demonstration](https://drive.google.com/file/d/1AyOXBfcVNShkN1f1Vv-ZektLqosjQxWC/view "Video Demonstration")
+[Features Demonstration Video (hosted)](https://drive.google.com/file/d/1AyOXBfcVNShkN1f1Vv-ZektLqosjQxWC/view "Video Demonstration")
 <br>
-[Local Video Features Demonstration](https://github.com/SelectStarFromMN/bamazon/blob/master/static/ScreencastDemo.webm "Video Demonstration")
+[Features Demonstration Video (local)](https://github.com/SelectStarFromMN/bamazon/blob/master/static/ScreencastDemo.webm "Video Demonstration")
 
 
 **Screenshots:**
